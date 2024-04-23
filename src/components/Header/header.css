@@ -1,0 +1,212 @@
+.header {
+  display: flex;
+  max-width: 1920px;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background: #1c0a90;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1300px;
+  height: 33px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  width: 155px;
+  height: 28px;
+  margin-right: 58px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__nav-table {
+  width: 801px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  color: #ffff;
+  padding: 0;
+}
+
+.header__nav-item {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 122.8%;
+  cursor: pointer;
+}
+
+.header__nav-contacts {
+  height: 2.083vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 58px;
+}
+
+.header__nav-image {
+  width: 23px;
+  height: 23px;
+}
+
+.header__nav-telNumber {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 122.8%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 0 0.521vw;
+}
+
+.header__burger {
+  display: none;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #ffffff;
+}
+
+.header__burger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__close-button {
+  position: absolute;
+  top: 10px;
+  right: 45px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+.header__nav.active .header__close-button {
+  display: block;
+}
+
+@media screen and (max-width: 1440px) {
+  .header {
+    padding-top: 2.361vw;
+    padding-bottom: 2.361vw;
+  }
+
+  .header__container {
+    width: 90.278vw;
+    height: 2.292vw;
+    margin: 0 4.306vw;
+  }
+
+  .header__logo {
+    width: 10.764vw;
+    height: 1.944vw;
+    margin-right: 4.028vw;
+  }
+
+  .header__nav-table {
+    width: 55.625vw;
+  }
+
+  .header__nav-contacts {
+    width: 12.5vw;
+    margin: 0 0 0.694vw 4.028vw;
+    gap: 0.694vw;
+  }
+
+  .header__nav-image {
+    width: 1.597vw;
+    height: 1.597vw;
+  }
+
+  .header__nav-telNumber {
+    font-size: 1.111vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__burger {
+    display: block;
+    width: 24px;
+  }
+
+  .header__nav {
+    display: none;
+    height: auto;
+  }
+  .header__nav.active {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(28, 10, 144, 1);
+    width: 50%;
+    height: 100vh;
+    padding: 10px 10px;
+    z-index: 11;
+  }
+  .header__nav-table {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    font-family: 'FuturaFuturisC-Bold';
+    gap: 20px;
+    width: 100%;
+    margin: 10px 0 0 0;
+  }
+
+  .header__nav-contacts {
+    width: 180px;
+    height: auto;
+    margin: 20px 0 10px 0;
+    gap: 0.977vw;
+    justify-content: left;
+  }
+
+  .header__nav-image {
+    width: 1.597vw;
+    height: 1.597vw;
+  }
+
+  .header__nav-telNumber {
+    font-size: 16px;
+    margin: 0;
+  }
+  .header__close-button {
+    right: 4.395vw;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .header__burger {
+    width: 20px;
+  }
+  .header__burger span {
+    height: 1px;
+    margin: 3px 0 3px 0;
+  }
+}

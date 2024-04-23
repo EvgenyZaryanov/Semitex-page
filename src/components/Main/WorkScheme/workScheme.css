@@ -1,0 +1,261 @@
+.workScheme {
+  width: 100%;
+  height: 1098px;
+  z-index: 0;
+  margin-top: -70px;
+  background-image: url(/schemeWork_cover.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.workScheme__container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  gap: 25px;
+  margin: 125px auto 200px;
+}
+
+.workScheme__title {
+  font-family: 'FuturaFuturisC-Bold';
+  text-align: center;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 99.8%;
+  color: #111111;
+  margin: 0;
+}
+
+.workScheme__subtitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  color: #030303;
+  margin: 0 0 42px;
+}
+
+.workScheme__gridBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.workScheme__gridBoxItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 39px 0 0 100px;
+  box-shadow: 0px 4px 30px rgba(9, 38, 192, 0.05);
+}
+
+.cover1 {
+  width: 440px;
+  height: 269px;
+  background: url(/workScheme_item1.png);
+  background-size: 440px 269px;
+  background-repeat: no-repeat;
+}
+.cover2 {
+  width: 440px;
+  height: 269px;
+  background: url(/workScheme_item2.png);
+  background-size: 440px 269px;
+  background-repeat: no-repeat;
+}
+.cover3 {
+  width: 413px;
+  height: 299px;
+  background: url(/workScheme_item3.png);
+  background-size: 413px 299px;
+  background-repeat: no-repeat;
+}
+.cover4 {
+  width: 440px;
+  height: 269px;
+  margin-left: -27px;
+  background-image: url(/workScheme_item4.png);
+  background-size: 440px 269px;
+  background-repeat: no-repeat;
+}
+.cover5 {
+  width: 440px;
+  height: 269px;
+  margin-left: -30px;
+  background-image: url(/workScheme_item5.png);
+  background-size: 440px 269px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cover6 {
+  width: 413px;
+  height: 269px;
+  background-image: url(/workScheme_item6.png);
+  background-size: 413px 269px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.workScheme__number {
+  font-family: 'FuturaFuturisC-Bold';
+  position: absolute;
+  top: 39px;
+  left: 38px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #969af7;
+}
+
+.extraNumber {
+  left: 65px;
+}
+
+.workScheme__gridBoxTitle {
+  font-family: 'FuturaFuturisC-Bold';
+  text-align: left;
+  margin: 0 0 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.extraGap {
+  margin: 10px 0 28px;
+}
+
+.extraGap_config {
+  margin-left: 27px;
+}
+
+.workScheme__gridBoxSubtitle {
+  max-width: 311px;
+  text-align: left;
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #e3e3e3;
+}
+
+.workScheme__button {
+  width: 300px;
+  height: 56px;
+  margin: 49px auto 154px;
+  padding: 0;
+  background: #ffa500;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+  .workScheme {
+    height: 76.25vw;
+    margin-top: -4.861vw;
+  }
+  .workScheme__container {
+    gap: 1.736vw;
+    margin: 8.681vw auto 13.889vw;
+  }
+  .workScheme__title {
+    font-size: 3.125vw;
+  }
+
+  .workScheme__subtitle {
+    font-size: 1.528vw;
+    line-height: 1.528vw;
+    margin: 0 0 2.917vw;
+  }
+
+  .workScheme__gridBoxItem {
+    padding: 2.917vw 0 0 6.944vw;
+    box-shadow: 0px 0.278vw 2.083vw rgba(9, 38, 192, 0.05);
+  }
+  .cover1 {
+    width: 30.556vw;
+    height: 18.681vw;
+    background-size: 30.556vw 18.681vw;
+  }
+  .cover2 {
+    width: 30.556vw;
+    height: 18.681vw;
+    background-size: 30.556vw 18.681vw;
+  }
+  .cover3 {
+    width: 28.681vw;
+    height: 20.764vw;
+    background-size: 28.681vw 20.764vw;
+  }
+  .cover4 {
+    width: 30.556vw;
+    height: 18.681vw;
+    margin-left: -1.875vw;
+    background-size: 30.556vw 18.681vw;
+  }
+  .cover5 {
+    width: 30.556vw;
+    height: 18.681vw;
+    margin-left: -2.083vw;
+    background-size: 30.556vw 18.681vw;
+  }
+  .cover6 {
+    width: 28.681vw;
+    height: 18.681vw;
+    background-size: 28.681vw 18.681vw;
+  }
+
+  .workScheme__number {
+    top: 2.708vw;
+    left: 2.639vw;
+    font-size: 2.5vw;
+    line-height: 2.917vw;
+  }
+
+  .extraNumber {
+    left: 4.514vw;
+  }
+
+  .workScheme__gridBoxTitle {
+    margin: 0 0 1.111vw;
+    font-size: 1.25vw;
+    line-height: 1.736vw;
+  }
+
+  .extraGap {
+    margin: 0.694vw 0 1.944vw;
+  }
+
+  .extraGap_config {
+    margin-left: 1.875vw;
+  }
+
+  .workScheme__gridBoxSubtitle {
+    max-width: 21.597vw;
+    font-size: 1.25vw;
+    line-height: 1.736vw;
+  }
+
+  .workScheme__button {
+    width: 20.833vw;
+    height: 3.889vw;
+    margin: 3.403vw auto 10.694vw;
+    border-radius: 0.694vw;
+    font-size: 1.25vw;
+    line-height: 1.319vw;
+  }
+}

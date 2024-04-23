@@ -1,0 +1,128 @@
+.benefits {
+  z-index: 2;
+  width: 100%;
+  margin-top: -70px;
+  background-image: url(/back-block.png);
+  background-size: 100% 1435px;
+}
+
+.benefits__container {
+  display: flex;
+  flex-direction: column;
+  width: 1193px;
+  gap: 25px;
+  margin: 125px auto 200px;
+}
+
+.benefits__title {
+  font-family: 'FuturaFuturisC-Bold';
+  text-align: center;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 99.8%;
+  color: #111111;
+  margin: 0;
+}
+
+.benefits__subtitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  color: #030303;
+  margin: 0 0 42px;
+}
+
+.benefits__gridBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2;
+  column-gap: 43px;
+  row-gap: 32px;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.gridBox-item {
+  width: 369px;
+  height: 406px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  align-items: center;
+  background-image: url(/gridBox_cover.png), linear-gradient(to bottom right, #ffffff, #f1f1f1);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  box-shadow: 0px 4px 30px rgba(9, 38, 192, 0.05);
+  border-radius: 10px;
+}
+
+.gridBox-title {
+  font-family: 'FuturaFuturisC-Bold';
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #2a336c;
+}
+
+.gridBox-subtitle {
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: #555555;
+}
+
+@media screen and (max-width: 1440px) {
+  .benefits {
+    margin-top: -4.861vw;
+    background-size: 100% 99.653vw;
+  }
+  .benefits__container {
+    width: 82.847vw;
+    gap: 1.736vw;
+    margin: 8.681vw auto 13.889vw;
+  }
+  .benefits__title {
+    font-size: 3.125vw;
+  }
+  .benefits__subtitle {
+    font-size: 1.528vw;
+    line-height: 1.667vw;
+    margin: 0 0 2.917vw;
+  }
+  .benefits__gridBox {
+    column-gap: 2.986vw;
+    row-gap: 2.222vw;
+  }
+  .gridBox-item {
+    width: 25.625vw;
+    height: 28.194vw;
+    padding-top: 2.778vw;
+    box-shadow: 0px 0.278vw 2.083vw rgba(9, 38, 192, 0.05);
+    border-radius: 0.694vw;
+  }
+
+  .gridBox-title {
+    margin-top: 2.778vw;
+    margin-bottom: 0.972vw;
+    font-size: 1.389vw;
+    line-height: 1.597vw;
+  }
+
+  .gridBox-subtitle {
+    font-size: 1.389vw;
+    line-height: 1.528vw;
+  }
+
+  .gridBox-image {
+    width: 10.903vw;
+    height: 11.319vw;
+  }
+}

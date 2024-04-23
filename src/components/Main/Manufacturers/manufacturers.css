@@ -1,0 +1,205 @@
+.manufacturers {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 728px;
+  outline: 1px solid red;
+  z-index: 0;
+  margin-top: -70px;
+  background-color: #0809a7;
+  background-image: url(/manufacturers_cover.png);
+  background-position: center;
+}
+
+.manufacturers__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1280px;
+  width: 100%;
+  height: auto;
+  margin-top: 154px;
+}
+
+.manufacturers__title {
+  font-family: 'FuturaFuturisC-Bold';
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 99.8%;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 0 57px;
+}
+
+.manufacturers__subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+  color: #ffffff;
+  margin: 0 0 92px;
+}
+
+.manufacturers__slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 42px;
+}
+
+.manufacturers__slider {
+  transition: transform 0.5s ease;
+}
+
+.slide-content {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-list {
+  display: flex;
+  overflow: hidden;
+  gap: 18px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-list__item {
+  height: 174px;
+  width: 242px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.slider-button {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  padding: 0;
+}
+
+.slider-button.prev {
+  left: 32px;
+  background: url(/prev_slide.png);
+  background-size: 32px 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider-button.next {
+  right: 32px;
+  background: url(/next_slide.png);
+  background-size: 32px 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.item1 {
+  background: url(/slider_item_1.png);
+  background-size: 150px 94px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+}
+.item2 {
+  background: url(/slider_item_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+}
+.item3 {
+  background: url(/slider_item_3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+}
+.item4 {
+  background: url(/slider_item_4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+}
+.item5 {
+  background: url(/slider_item_5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 1440px) {
+  .manufacturers {
+    height: 50.556vw;
+    margin-top: -4.861vw;
+  }
+  .manufacturers__container {
+    max-width: 88.889vw;
+    margin-top: 10.694vw;
+  }
+  .manufacturers__title {
+    font-size: 3.125vw;
+    margin: 0 0 3.958vw;
+  }
+  .manufacturers__subtitle {
+    font-size: 1.389vw;
+    line-height: 2.153vw;
+    margin: 0 0 6.389vw;
+  }
+  .manufacturers__slider-wrapper {
+    width: 83.333vw;
+    display: flex;
+    margin-bottom: 2.917vw;
+    justify-content: center;
+  }
+  .slide-content {
+    height: 13.889vw;
+  }
+  .slider-list {
+    gap: 1.25vw;
+  }
+  .slider-list__item {
+    height: 10.694vw;
+    width: 14.722vw;
+    box-shadow: 0px 0.278vw 2.083vw rgba(0, 0, 0, 0.05);
+    border-radius: 0.694vw;
+  }
+  .slider-button {
+    width: 2.222vw;
+    height: 2.222vw;
+    top: 47%;
+    transform: translateY(-50%);
+  }
+  .slider-button.prev {
+    left: 2.222vw;
+    background-size: 2.222vw 2.222vw;
+  }
+  .slider-button.next {
+    right: 2.222vw;
+    background-size: 2.222vw 2.222vw;
+  }
+  .item1 {
+    background-size: 10.417vw 6.528vw;
+  }
+  .item2 {
+    background-size: 12.917vw 3.264vw;
+  }
+  .item3 {
+    background-size: 7.361vw 7.361vw;
+  }
+  .item4 {
+    background-size: 11.875vw 8.056vw;
+  }
+  .item5 {
+    background-size: 12.708vw 2.778vw;
+  }
+}

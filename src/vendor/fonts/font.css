@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'FuturaFuturisLightC';
+  src: url('FuturaFuturisLightC.woff2') format('woff2'),
+    url('FuturaFuturisLightC.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'FuturaFuturisC-Bold';
+  src: url('./FuturaFuturisC-Bold.woff2') format('woff2'),
+    url('./FuturaFuturisC-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'FuturaFuturisBlackC';
+  src: url('./FuturaFuturisBlackC.woff') format('woff2'),
+    url('./FuturaFuturisBlackC.woff') format('woff');
+}

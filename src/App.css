@@ -1,0 +1,29 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'FuturaFuturisLightC';
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 850px;
+  padding: 0;
+  background-image: url(/banner.png);
+  background-color: #07086c;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1440px) {
+  .banner {
+    height: 59.028vw;
+  }
+}
