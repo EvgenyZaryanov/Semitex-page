@@ -32,11 +32,11 @@ function Header() {
               +7 (812) <b>313-58-45</b>
             </p>
           </div>
-
           <button className="header__close-button" onClick={closeNav}>
             &times;
           </button>
         </nav>
+        {isNavOpen && <div className="overlay" onClick={closeNav}></div>}
         <button className="header__burger" onClick={toggleNav}>
           <span></span>
           <span></span>

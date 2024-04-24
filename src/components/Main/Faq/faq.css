@@ -12,9 +12,9 @@
 
 .faq__container {
   width: 1281px;
+  height: auto;
   display: flex;
   flex-direction: column;
-  width: auto;
   gap: 25px;
   margin: 144px auto 93px;
 }
@@ -53,6 +53,11 @@
   padding: 30px 0 30px 53px;
 }
 
+.faq__accordion h3.active {
+  margin: 0;
+  background: linear-gradient(180deg, #969af7 0%, #686eec 100%);
+}
+
 .faq__accordion-button {
   display: flex;
   justify-content: center;
@@ -63,20 +68,17 @@
   width: 40px;
   height: 40px;
   padding: 0;
-  background-color: #757aef;
+  background: #757aef;
   border-radius: 50%;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 .faq__accordion-button.active {
-  background-color: #fff;
+  background: #fff;
 }
 
 .faq__accordion p {
-  transition: max-height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
-  overflow: hidden;
-  max-height: 0;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   font-weight: 400;
@@ -86,21 +88,18 @@
   background: linear-gradient(180deg, #ffffff 50.57%, #bdc0ff 100%);
   padding: 39px 53px;
   margin: -10px 0 27px 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
 }
 
-.faq__accordion h3.active {
-  margin: 0;
-  background: linear-gradient(180deg, #969af7 0%, #686eec 100%);
-}
-
-.faq__accordion p {
-  max-height: 600px;
+.faq__accordion p.active {
+  max-height: 300px;
 }
 
 @media screen and (max-width: 1440px) {
   .faq {
     margin-top: -4.861vw;
-    /* background-size: 1920px 1271px; */
   }
   .faq__container {
     width: 88.958vw;

@@ -50,6 +50,17 @@
   font-size: 16px;
   line-height: 122.8%;
   cursor: pointer;
+  position: relative;
+}
+
+.header__nav-item:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
 }
 
 .header__nav-contacts {
@@ -83,6 +94,13 @@
   cursor: pointer;
   padding: 0;
   color: #ffffff;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+.header__burger:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
 }
 
 .header__burger span {
@@ -155,20 +173,24 @@
   }
 
   .header__nav {
-    display: none;
-    height: auto;
-  }
-  .header__nav.active {
-    display: block;
-    position: absolute;
+    position: fixed;
+    justify-content: start;
+    align-items: start;
     top: 0;
-    right: 0;
-    background-color: rgb(28, 10, 144, 1);
-    width: 50%;
+    right: -100%;
+    width: 30%;
     height: 100vh;
+    background-color: rgb(28, 10, 144, 1);
     padding: 10px 10px;
     z-index: 11;
+    transition: right 0.3s ease-in-out;
   }
+  .header__nav.active {
+    display: flex;
+    flex-direction: column;
+    right: 0;
+  }
+
   .header__nav-table {
     flex-direction: column;
     align-items: start;
@@ -188,8 +210,8 @@
   }
 
   .header__nav-image {
-    width: 1.597vw;
-    height: 1.597vw;
+    width: 20px;
+    height: 20px;
   }
 
   .header__nav-telNumber {
@@ -199,14 +221,32 @@
   .header__close-button {
     right: 4.395vw;
   }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
+  .header__nav {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 475px) {
   .header__burger {
     width: 20px;
   }
   .header__burger span {
     height: 1px;
     margin: 3px 0 3px 0;
+  }
+  .header__nav {
+    width: 62%;
   }
 }
