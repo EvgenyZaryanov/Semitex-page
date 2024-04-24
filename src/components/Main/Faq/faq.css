@@ -88,13 +88,6 @@
   background: linear-gradient(180deg, #ffffff 50.57%, #bdc0ff 100%);
   padding: 39px 53px;
   margin: -10px 0 27px 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-.faq__accordion p.active {
-  max-height: 300px;
 }
 
 @media screen and (max-width: 1440px) {
