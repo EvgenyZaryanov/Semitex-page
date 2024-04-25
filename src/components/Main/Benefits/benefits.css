@@ -63,7 +63,8 @@
 }
 .gridBox-item:hover {
   transform: scale(1.05);
-  outline: 1px solid gray;
+  outline: 1px solid #2a336c;
+  background-image: url(/gridBox_cover.png), linear-gradient(to bottom right, #879bf4, #f1f1f1);
 }
 
 .gridBox-title {

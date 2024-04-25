@@ -21,7 +21,7 @@ function Faq() {
   };
 
   return (
-    <section className="faq">
+    <section id="faq" className="faq">
       <div className="faq__container">
         <h2 className="faq__title">Ответы на самые популярные вопросы в сфере</h2>
         <div className="faq__accordion">

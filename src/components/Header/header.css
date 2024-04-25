@@ -1,3 +1,10 @@
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #fff;
+}
+
 .header {
   display: flex;
   max-width: 1920px;
@@ -181,7 +188,7 @@
     width: 30%;
     height: 100vh;
     background-color: rgb(28, 10, 144, 1);
-    padding: 10px 10px;
+    padding: 10px 10px 0px 20px;
     z-index: 11;
     transition: right 0.3s ease-in-out;
   }
@@ -242,11 +249,30 @@
   .header__burger {
     width: 20px;
   }
+
   .header__burger span {
     height: 1px;
     margin: 3px 0 3px 0;
   }
+
   .header__nav {
     width: 62%;
+  }
+
+  .header__nav-item {
+    font-size: 12px;
+    line-height: 122.8%;
+  }
+
+  .header__nav-contacts {
+    gap: 2.977vw;
+  }
+
+  .header__nav-telNumber {
+    font-size: 12px;
+    margin: 0;
+  }
+  .header__close-button {
+    font-size: 20px;
   }
 }

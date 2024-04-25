@@ -19,11 +19,15 @@ function Header() {
         <nav className={`header__nav ${isNavOpen ? 'active' : ''}`}>
           <ul className="header__nav-table">
             <li className="header__nav-item">Каталог</li>
-            <li className="header__nav-item">Производители</li>
+            <li className="header__nav-item">
+              <a href="#target">Производители</a>
+            </li>
             <li className="header__nav-item">Для кого мы работаем</li>
             <li className="header__nav-item">Сертификаты</li>
             <li className="header__nav-item">О нас</li>
-            <li className="header__nav-item">FAQ</li>
+            <li className="header__nav-item">
+              <a href="#faq">FAQ</a>
+            </li>
             <li className="header__nav-item">Контакты</li>
           </ul>
           <div className="header__nav-contacts">

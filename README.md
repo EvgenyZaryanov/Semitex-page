@@ -1,6 +1,8 @@
 # Semitex-page
 
-## [ссылка на страницу](https://zaryanov-semitex-test-page.netlify.app/)
+## [ссылка на страницу](https://zaryanov-semitex-new-page.netlify.app/)
+
+#### [Figma - макет](https://www.figma.com/file/j0oj7nwq15OZddwm1dP1GT/demo-1?type=design&node-id=2-2814&mode=design&t=MyvFs0vvgLf9mZxU-0)
 
 **Выполнены следующие условия:**
 
